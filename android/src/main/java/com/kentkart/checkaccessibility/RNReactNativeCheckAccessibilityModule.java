@@ -29,7 +29,7 @@ public class RNReactNativeCheckAccessibilityModule extends ReactContextBaseJavaM
 
   @ReactMethod
   public void isAccessibilityEnabled(Callback callback) {
-      AccessibilityManager am = (AccessibilityManager) context.getSystemService(Context.ACCESSIBILITY_SERVICE);
+      AccessibilityManager am = (AccessibilityManager) this.reactContext.getSystemService(Context.ACCESSIBILITY_SERVICE);
       List<AccessibilityServiceInfo> enabledServices = am.getEnabledAccessibilityServiceList(AccessibilityServiceInfo.FEEDBACK_ALL_MASK);
 
       for (AccessibilityServiceInfo enabledService : enabledServices) {
