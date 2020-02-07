@@ -1,8 +1,8 @@
 
 package com.kentkart.checkaccessibility;
 
-
 import android.content.Context;
+import android.accessibilityservice.AccessibilityServiceInfo;
 import android.support.v4.view.accessibility.AccessibilityEventCompat;
 import android.view.accessibility.AccessibilityEvent;
 import com.facebook.react.bridge.Callback;
@@ -12,6 +12,8 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Promise;
+
+import java.util.List;
 
 public class RNReactNativeCheckAccessibilityModule extends ReactContextBaseJavaModule {
 
